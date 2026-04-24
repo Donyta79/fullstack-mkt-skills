@@ -1,5 +1,5 @@
 ---
-name: lich-noi-dung
+name: 01-lich-noi-dung
 description: Lich noi dung thang — len lich dang bai da kenh voi ti le pheu, content pillar, repurposing matrix, va scoring tieu chi.
 category: content
 triggers:

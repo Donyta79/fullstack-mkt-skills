@@ -1,5 +1,5 @@
 ---
-name: phan-tich-du-lieu
+name: 13-phan-tich-du-lieu
 description: Doc data marketing tho va bien thanh insight hanh dong — phan tich theo kenh, chien dich, creative, doi tuong, thoi gian
 category: performance
 triggers:

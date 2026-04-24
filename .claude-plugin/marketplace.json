@@ -1,0 +1,43 @@
+{
+  "name": "fullstack-mkt-skills",
+  "owner": {
+    "name": "Over Powers Agency",
+    "url": "https://opa.business"
+  },
+  "metadata": {
+    "description": "Bo skill marketing toan dien cho AI agent — chien luoc, noi dung, hieu suat, van hanh. Thi truong Viet Nam 2025-2026.",
+    "version": "2.0.0",
+    "repository": "https://github.com/minhnv0807/fullstack-mkt-skills"
+  },
+  "plugins": [
+    {
+      "name": "fullstack-mkt-skills",
+      "description": "20 skills marketing toan dien cho thi truong Viet Nam — tu lap ke hoach, brief chien dich, viet script TikTok, copy quang cao, den phan tich hieu suat va email marketing. Tich hop voi Claude Code, Claude Pro, ChatGPT, Gemini, Copilot, Cursor. Dung foundation skill `product-marketing-context` de tranh lap lai thong tin.",
+      "source": ".",
+      "strict": false,
+      "skills": [
+        "./skills/product-marketing-context",
+        "./skills/00-ke-hoach-mkt",
+        "./skills/01-lich-noi-dung",
+        "./skills/02-brief-chien-dich",
+        "./skills/03-danh-gia-hieu-suat",
+        "./skills/04-script-video",
+        "./skills/05-copy-quang-cao",
+        "./skills/06-brief-ugc-egc",
+        "./skills/07-bao-cao-marketing",
+        "./skills/08-nghien-cuu-doi-thu",
+        "./skills/09-insight-khach-hang",
+        "./skills/10-tinh-kpi-nguoc",
+        "./skills/11-thiet-lap-kenh",
+        "./skills/12-brief-landing-page",
+        "./skills/13-phan-tich-du-lieu",
+        "./skills/14-email-marketing",
+        "./skills/15-social-listening",
+        "./skills/16-marketing-psychology",
+        "./skills/17-pricing-strategy",
+        "./skills/18-referral-program",
+        "./skills/19-ab-test-setup"
+      ]
+    }
+  ]
+}

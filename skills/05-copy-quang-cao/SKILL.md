@@ -1,5 +1,5 @@
 ---
-name: copy-quang-cao
+name: 05-copy-quang-cao
 description: Viet 6 bien the copy quang cao theo 3 tang pheu (TOFU/MOFU/BOFU), tuan thu chinh sach quang cao, co CTA phu hop tung nen tang
 category: content
 triggers:

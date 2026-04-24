@@ -1,5 +1,5 @@
 ---
-name: danh-gia-hieu-suat
+name: 03-danh-gia-hieu-suat
 description: Danh gia hieu suat marketing — audit performance ads va organic, chan doan root cause, de xuat toi uu voi action plan 48h va checklist hang tuan.
 category: performance
 triggers:

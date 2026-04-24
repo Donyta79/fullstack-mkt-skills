@@ -1,5 +1,5 @@
 ---
-name: social-listening
+name: 15-social-listening
 description: Giam sat thuong hieu, doi thu, xu huong nganh tren mang xa hoi — phat hien som khung hoang va co hoi content
 category: operations
 triggers:

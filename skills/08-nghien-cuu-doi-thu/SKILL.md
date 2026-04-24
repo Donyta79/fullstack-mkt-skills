@@ -1,5 +1,5 @@
 ---
-name: nghien-cuu-doi-thu
+name: 08-nghien-cuu-doi-thu
 description: Phan tich doi thu canh tranh 3 tang (truc tiep, gian tiep, thu cap) — dinh vi, SWOT, content benchmark, tim khoang trong thi truong
 category: strategy
 triggers:

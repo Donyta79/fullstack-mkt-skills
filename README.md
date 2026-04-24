@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-16-6d28d9?style=for-the-badge&labelColor=1e1033" alt="16 Skills"/>
+  <img src="https://img.shields.io/badge/v2.0-Plugin%20Ready-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v2.0"/>
+  <img src="https://img.shields.io/badge/Skills-20-6d28d9?style=for-the-badge&labelColor=1e1033" alt="20 Skills"/>
   <img src="https://img.shields.io/badge/Agents-4-be185d?style=for-the-badge&labelColor=1e1033" alt="4 Agents"/>
   <img src="https://img.shields.io/badge/Workflows-3-0f766e?style=for-the-badge&labelColor=1e1033" alt="3 Workflows"/>
   <img src="https://img.shields.io/badge/Market-Vietnam%202025--2026-f97316?style=for-the-badge&labelColor=1e1033" alt="Vietnam Market"/>
@@ -11,7 +12,15 @@
 <p align="center">
   <strong>Bien AI thanh tro ly marketing chuyen nghiep — thiet ke cho thi truong Viet Nam.</strong>
   <br/>
-  <sub>Framework <b>Over Powers Agency</b> | Claude Code + ChatGPT + Gemini + Copilot</sub>
+  <sub>Framework <b>Over Powers Agency</b> | Claude Code + ChatGPT + Gemini + Copilot + Cursor</sub>
+</p>
+
+<p align="center">
+  <sub>
+    Tuan thu <a href="https://agentskills.io">Agent Skills Spec</a> |
+    Claude Code Plugin Marketplace |
+    Universal AI agent compat
+  </sub>
 </p>
 
 ---
@@ -22,7 +31,7 @@
 Ban:    "Lap ke hoach marketing cho spa di"
 AI:     *Tra loi 500 tu chung chung, khong so lieu, khong KPI, khong timeline*
 
-Ban:    "Viet copy quang cao Facebook"  
+Ban:    "Viet copy quang cao Facebook"
 AI:     *1 doan generic, khong phan biet cold/warm/hot audience*
 
 Ban:    "Bao cao thang nay"
@@ -33,11 +42,11 @@ AI:     *Liet ke so lieu, khong co nhan dinh, khong de xuat hanh dong*
 
 ```
 Ban:    "Lap ke hoach marketing cho spa"
-AI:     *File .md 2000+ tu — 5 phan, bang bieu, KPI 3 kich ban, 
+AI:     *File .md 2000+ tu — 5 phan, bang bieu, KPI 3 kich ban,
          ngan sach phan bo, timeline tuan, risk matrix*
 
 Ban:    "Viet copy quang cao"
-AI:     *6 bien the — 2 TOFU + 2 MOFU + 2 BOFU, 
+AI:     *6 bien the — 2 TOFU + 2 MOFU + 2 BOFU,
          moi bien the co headline + primary text + CTA*
 
 Ban:    "Bao cao thang"
@@ -47,16 +56,44 @@ AI:     *Nhan dinh truoc, so lieu minh hoa, nguyen nhan goc re,
 
 ---
 
+## Foundation Skill — Khong phai hoi lai
+
+Moi skill khac bat dau bang: **doc `.agents/product-marketing-context.md` truoc**.
+
+```
+Chay 1 lan dau du an:
+> Thiet lap product marketing context cho [san pham]
+  → AI tao file .agents/product-marketing-context.md
+    chua 12 section (product, audience, persona, 
+    doi thu, dinh vi, noi dau, differentiation, ...)
+
+Moi lan sau:
+> Viet copy quang cao Facebook
+  → AI doc context → viet luon, khong hoi lai
+> Lap ke hoach MKT tháng toi
+  → AI doc context → lap luon, khong hoi lai
+```
+
+Tiet kiem **70% thoi gian** moi cuoc hoi thoai.
+
+---
+
 ## Quick Start
 
-### 1. Clone
+### Option 1: Claude Code Plugin (khuyen dung)
+
+```bash
+# Trong Claude Code
+/plugin marketplace add minhnv0807/fullstack-mkt-skills
+/plugin install fullstack-mkt-skills
+```
+
+### Option 2: Clone + Install
 
 ```bash
 git clone https://github.com/minhnv0807/fullstack-mkt-skills.git
 cd fullstack-mkt-skills
 ```
-
-### 2. Install
 
 <table>
 <tr>
@@ -82,101 +119,132 @@ chmod +x install.sh
 </tr>
 </table>
 
-### 3. Use
+### Option 3: Voi agent khac (ChatGPT, Gemini, Cursor)
+
+Copy file `.md` lam Custom Instructions hoac context. Moi file la 1 prompt doc lap.
+
+### Use
 
 ```
-> Lap ke hoach fullstack marketing cho spa, ngan sach 30 trieu/thang
-> Viet script TikTok 30s cho son moi moi ra mat
+# Lan dau
+> Thiet lap product marketing context cho spa Luna
+
+# Cac lan sau — khong can nhac lai thong tin san pham
+> Lap ke hoach fullstack marketing thang 5
+> Viet script TikTok 30s cho facial moi
 > CPMess dang 45K, ROAS 1.8x — danh gia va de xuat toi uu
 > Tinh nguoc ngan sach de dat 200 trieu doanh thu/thang
 ```
 
-> **Khong chi Claude Code** — upload file `.md` vao ChatGPT, Gemini, Copilot, hay bat ky AI nao doc Markdown.
-
 ---
 
-## 16 Skills
+## 20 Skills
 
 <table>
 <tr><th>#</th><th>Skill</th><th>Lam gi</th><th>Category</th></tr>
-<tr><td><code>00</code></td><td><a href="skills/00-ke-hoach-mkt.md"><b>Ke Hoach MKT</b></a></td><td>Ke hoach marketing toan dien 5 phan — master skill goi cac skill con</td><td>
+<tr><td><b>★</b></td><td><a href="skills/product-marketing-context/SKILL.md"><b>Product Marketing Context</b></a></td><td><b>Foundation</b> — doc truoc moi skill, tranh lap lai thong tin</td><td>
+
+![Foundation](https://img.shields.io/badge/-Foundation-be185d?style=flat-square)
+
+</td></tr>
+<tr><td><code>00</code></td><td><a href="skills/00-ke-hoach-mkt/SKILL.md"><b>Ke Hoach MKT</b></a></td><td>Ke hoach toan dien 7 phan + SAVE framework + risk matrix</td><td>
 
 ![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
 
 </td></tr>
-<tr><td><code>01</code></td><td><a href="skills/01-lich-noi-dung.md"><b>Lich Noi Dung</b></a></td><td>Lich dang bai thang + repurposing matrix + AI scoring</td><td>
+<tr><td><code>01</code></td><td><a href="skills/01-lich-noi-dung/SKILL.md"><b>Lich Noi Dung</b></a></td><td>Lich thang + repurposing matrix 1:9 + AI scoring</td><td>
 
 ![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
 
 </td></tr>
-<tr><td><code>02</code></td><td><a href="skills/02-brief-chien-dich.md"><b>Brief Chien Dich</b></a></td><td>Brief sang tao 9 phan + RACI matrix + risk mitigation</td><td>
+<tr><td><code>02</code></td><td><a href="skills/02-brief-chien-dich/SKILL.md"><b>Brief Chien Dich</b></a></td><td>Brief 9 phan + RACI matrix + risk mitigation</td><td>
 
 ![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
 
 </td></tr>
-<tr><td><code>03</code></td><td><a href="skills/03-danh-gia-hieu-suat.md"><b>Danh Gia Hieu Suat</b></a></td><td>Chan doan hieu suat ads + 5 Whys root cause + 48h action plan</td><td>
+<tr><td><code>03</code></td><td><a href="skills/03-danh-gia-hieu-suat/SKILL.md"><b>Danh Gia Hieu Suat</b></a></td><td>Diagnostic tree + 5 Whys + 48h action plan</td><td>
 
 ![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
 
 </td></tr>
-<tr><td><code>04</code></td><td><a href="skills/04-script-video.md"><b>Script Video</b></a></td><td>Script TikTok/Reels/Shorts — 2 ban A/B + viral score + huong dan quay</td><td>
+<tr><td><code>04</code></td><td><a href="skills/04-script-video/SKILL.md"><b>Script Video</b></a></td><td>Script A/B + 5 hook types + viral score + filming guide</td><td>
 
 ![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
 
 </td></tr>
-<tr><td><code>05</code></td><td><a href="skills/05-copy-quang-cao.md"><b>Copy Quang Cao</b></a></td><td>6 bien the copy theo 3 tang pheu + emotional triggers + compliance</td><td>
+<tr><td><code>05</code></td><td><a href="skills/05-copy-quang-cao/SKILL.md"><b>Copy Quang Cao</b></a></td><td>6 variations 3 tang pheu + emotional triggers</td><td>
 
 ![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
 
 </td></tr>
-<tr><td><code>06</code></td><td><a href="skills/06-brief-ugc-egc.md"><b>Brief UGC/EGC</b></a></td><td>Brief creator/nhan vien quay video + legal template + payment guide</td><td>
+<tr><td><code>06</code></td><td><a href="skills/06-brief-ugc-egc/SKILL.md"><b>Brief UGC/EGC</b></a></td><td>Brief creator + legal + payment + batch management</td><td>
 
 ![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
 
 </td></tr>
-<tr><td><code>07</code></td><td><a href="skills/07-bao-cao-marketing.md"><b>Bao Cao Marketing</b></a></td><td>Bao cao thang doc 5 phut — nhan dinh truoc, so lieu sau</td><td>
+<tr><td><code>07</code></td><td><a href="skills/07-bao-cao-marketing/SKILL.md"><b>Bao Cao Marketing</b></a></td><td>Bao cao thang doc 5 phut — nhan dinh truoc, so lieu sau</td><td>
 
 ![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
 
 </td></tr>
-<tr><td><code>08</code></td><td><a href="skills/08-nghien-cuu-doi-thu.md"><b>Nghien Cuu Doi Thu</b></a></td><td>Phan tich 3 tang doi thu + SWOT + positioning map + market gaps</td><td>
+<tr><td><code>08</code></td><td><a href="skills/08-nghien-cuu-doi-thu/SKILL.md"><b>Nghien Cuu Doi Thu</b></a></td><td>3 tang doi thu + SWOT + positioning map + gaps</td><td>
 
 ![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
 
 </td></tr>
-<tr><td><code>09</code></td><td><a href="skills/09-insight-khach-hang.md"><b>Insight Khach Hang</b></a></td><td>Persona + customer journey + JTBD + insight validation</td><td>
+<tr><td><code>09</code></td><td><a href="skills/09-insight-khach-hang/SKILL.md"><b>Insight Khach Hang</b></a></td><td>Persona + customer journey + JTBD + validation</td><td>
 
 ![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
 
 </td></tr>
-<tr><td><code>10</code></td><td><a href="skills/10-tinh-kpi-nguoc.md"><b>Tinh KPI Nguoc</b></a></td><td>Doanh thu → ngan sach (va nguoc lai) + 3 kich ban + sensitivity</td><td>
+<tr><td><code>10</code></td><td><a href="skills/10-tinh-kpi-nguoc/SKILL.md"><b>Tinh KPI Nguoc</b></a></td><td>Doanh thu → ngan sach + 3 kich ban + sensitivity</td><td>
 
 ![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
 
 </td></tr>
-<tr><td><code>11</code></td><td><a href="skills/11-thiet-lap-kenh.md"><b>Thiet Lap Kenh</b></a></td><td>Setup 7 kenh A-Z + checklist 4 giai doan + ke hoach 30 ngay dau</td><td>
+<tr><td><code>11</code></td><td><a href="skills/11-thiet-lap-kenh/SKILL.md"><b>Thiet Lap Kenh</b></a></td><td>Setup 7 kenh + checklist 4 phase + 30-day plan</td><td>
 
 ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
 
 </td></tr>
-<tr><td><code>12</code></td><td><a href="skills/12-brief-landing-page.md"><b>Brief Landing Page</b></a></td><td>Brief 7 section + conversion checklist + A/B test plan + tracking</td><td>
+<tr><td><code>12</code></td><td><a href="skills/12-brief-landing-page/SKILL.md"><b>Brief Landing Page</b></a></td><td>Brief 7 section + conversion checklist + A/B plan</td><td>
 
 ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
 
 </td></tr>
-<tr><td><code>13</code></td><td><a href="skills/13-phan-tich-du-lieu.md"><b>Phan Tich Du Lieu</b></a> <sup>NEW</sup></td><td>Doc data Meta/TikTok/GA4 → insight + trend + anomaly detection</td><td>
+<tr><td><code>13</code></td><td><a href="skills/13-phan-tich-du-lieu/SKILL.md"><b>Phan Tich Du Lieu</b></a></td><td>Meta/TikTok/GA4 → insight + trend + anomaly</td><td>
 
 ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
 
 </td></tr>
-<tr><td><code>14</code></td><td><a href="skills/14-email-marketing.md"><b>Email Marketing</b></a> <sup>NEW</sup></td><td>Welcome/nurture/re-engage sequence + automation + deliverability</td><td>
+<tr><td><code>14</code></td><td><a href="skills/14-email-marketing/SKILL.md"><b>Email Marketing</b></a></td><td>Welcome/nurture/re-engage + automation + deliverability</td><td>
 
 ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
 
 </td></tr>
-<tr><td><code>15</code></td><td><a href="skills/15-social-listening.md"><b>Social Listening</b></a> <sup>NEW</sup></td><td>Giam sat thuong hieu + sentiment + crisis protocol</td><td>
+<tr><td><code>15</code></td><td><a href="skills/15-social-listening/SKILL.md"><b>Social Listening</b></a></td><td>Brand monitoring + sentiment + crisis protocol</td><td>
 
 ![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
+
+</td></tr>
+<tr><td><code>16</code></td><td><a href="skills/16-marketing-psychology/SKILL.md"><b>Marketing Psychology</b></a> <sup>NEW</sup></td><td>7 Cialdini principles + VN cultural adaptation</td><td>
+
+![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
+
+</td></tr>
+<tr><td><code>17</code></td><td><a href="skills/17-pricing-strategy/SKILL.md"><b>Pricing Strategy</b></a> <sup>NEW</sup></td><td>Pricing tier + charm/anchor/bundle + break-even</td><td>
+
+![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
+
+</td></tr>
+<tr><td><code>18</code></td><td><a href="skills/18-referral-program/SKILL.md"><b>Referral Program</b></a> <sup>NEW</sup></td><td>1-way/2-way/affiliate + VN channels + anti-fraud</td><td>
+
+![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
+
+</td></tr>
+<tr><td><code>19</code></td><td><a href="skills/19-ab-test-setup/SKILL.md"><b>A/B Test Setup</b></a> <sup>NEW</sup></td><td>Sample size + 8 what-to-test + significance analysis</td><td>
+
+![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
 
 </td></tr>
 </table>
@@ -185,13 +253,11 @@ chmod +x install.sh
 
 ## 4 Agents
 
-Moi agent la mot "nhan vien AI" chuyen biet — co vai tro, skills rieng, va gioi han ro rang.
-
 ```
                         ┌─────────────────────┐
                         │   MKT STRATEGIST    │
                         │ Ke hoach + Chien luoc│
-                        │ Skills: 00,02,08,09 │
+                        │ Skills: 00,02,08,09,16,17│
                         └─────────┬───────────┘
                                   │
               ┌───────────────────┼───────────────────┐
@@ -199,42 +265,35 @@ Moi agent la mot "nhan vien AI" chuyen biet — co vai tro, skills rieng, va gio
     ┌─────────▼─────────┐ ┌──────▼──────────┐ ┌──────▼──────────┐
     │ CONTENT PRODUCER  │ │ PERF. ANALYST   │ │ CHANNEL OPERATOR│
     │ Noi dung + Script │ │ Data + Bao cao  │ │ Kenh + Landing  │
-    │ Skills: 01,04,05  │ │ Skills: 03,07,10│ │ Skills: 11,12,14│
+    │ Skills: 01,04,05,06│ │ 03,07,10,13,19 │ │ 11,12,14,15,18 │
     └───────────────────┘ └─────────────────┘ └─────────────────┘
 ```
 
-| Agent | File | Khi nao dung |
-|-------|------|-------------|
-| [**MKT Strategist**](agents/mkt-strategist.md) | `agents/mkt-strategist.md` | Lap ke hoach, nghien cuu, dinh vi |
-| [**Content Producer**](agents/content-producer.md) | `agents/content-producer.md` | Viet script, copy, lich content, brief creator |
-| [**Performance Analyst**](agents/performance-analyst.md) | `agents/performance-analyst.md` | Doc data, danh gia ads, bao cao, tinh KPI |
-| [**Channel Operator**](agents/channel-operator.md) | `agents/channel-operator.md` | Setup kenh, landing page, email, social listening |
+| Agent | Skills chinh |
+|-------|--------------|
+| [MKT Strategist](agents/mkt-strategist.md) | 00, 02, 08, 09, 16, 17 |
+| [Content Producer](agents/content-producer.md) | 01, 04, 05, 06 |
+| [Performance Analyst](agents/performance-analyst.md) | 03, 07, 10, 13, 19 |
+| [Channel Operator](agents/channel-operator.md) | 11, 12, 14, 15, 18 |
 
 ---
 
 ## 3 Workflows
 
-Workflow = chuoi skill chay lien tuc, tu dong goi nhau.
-
 ### Campaign Launch (14-21 ngay)
-
 ```
 08 Doi thu → 09 Insight → 00 Ke hoach → 02 Brief → 01+04+05 Content → 06 UGC → 11+12 Kenh
 ```
 
 ### Monthly Cycle (3-5 ngay)
-
 ```
 13 Data → 03 Danh gia → 07 Bao cao → 10 KPI moi → 01 Lich moi
 ```
 
 ### Content Production (hang tuan)
-
 ```
 Review lich → 04 Script → Quay/Dung → 05 Copy ads → Len lich dang
 ```
-
-> Chi tiet tai thu muc [`workflows/`](workflows/)
 
 ---
 
@@ -250,21 +309,21 @@ Review lich → 04 Script → Quay/Dung → 05 Copy ads → Len lich dang
 <tr><td><b>Email Open Rate</b></td><td>&lt;15%</td><td>15-25%</td><td>25-35%</td><td>>35%</td></tr>
 </table>
 
-> Full benchmark theo nganh (Beauty, F&B, Education, E-commerce, BDS) tai [`references/benchmarks-vietnam.md`](references/benchmarks-vietnam.md)
+> Full benchmark theo nganh tai [`references/benchmarks-vietnam.md`](references/benchmarks-vietnam.md)
 
 ---
 
 ## Tuong thich
 
-| Platform | Cach dung |
-|----------|----------|
-| **Claude Code** | `install.sh --global` — skill tu dong kich hoat theo trigger |
-| **Claude Pro** | Upload vao Project Knowledge |
-| **ChatGPT** | Upload `.md` files lam Custom Instructions hoac GPT config |
-| **Gemini** | Upload lam context hoac system prompt |
-| **Copilot** | Copy vao `.github/copilot-instructions.md` |
-| **Cursor / Windsurf** | Copy vao rules hoac `.cursorrules` |
-| **Bat ky AI agent** | Moi file `.md` la 1 prompt doc lap — doc duoc la dung duoc |
+| Platform | Ho tro | Cach dung |
+|----------|--------|----------|
+| **Claude Code** | Full | `/plugin install` hoac `install.sh --global` |
+| **Claude Pro** | Full | Upload vao Project Knowledge |
+| **ChatGPT** | Partial | Upload `.md` lam Custom GPT config |
+| **Gemini** | Partial | System prompt / context |
+| **Copilot** | Partial | `.github/copilot-instructions.md` |
+| **Cursor / Windsurf** | Partial | `.cursorrules` |
+| **Bat ky AI agent** | Partial | Moi file `.md` la 1 prompt doc lap |
 
 ---
 
@@ -273,71 +332,71 @@ Review lich → 04 Script → Quay/Dung → 05 Copy ads → Len lich dang
 ```
 fullstack-mkt-skills/
 │
-├── skills/                     # 16 skill chinh
-│   ├── 00-ke-hoach-mkt.md             Strategy    377 lines
-│   ├── 01-lich-noi-dung.md            Content     236 lines
-│   ├── 02-brief-chien-dich.md         Strategy    339 lines
-│   ├── 03-danh-gia-hieu-suat.md       Performance 393 lines
-│   ├── 04-script-video.md             Content     234 lines
-│   ├── 05-copy-quang-cao.md           Content     238 lines
-│   ├── 06-brief-ugc-egc.md            Content     315 lines
-│   ├── 07-bao-cao-marketing.md        Performance 359 lines
-│   ├── 08-nghien-cuu-doi-thu.md       Strategy    337 lines
-│   ├── 09-insight-khach-hang.md       Strategy    308 lines
-│   ├── 10-tinh-kpi-nguoc.md           Performance 312 lines
-│   ├── 11-thiet-lap-kenh.md           Operations  603 lines
-│   ├── 12-brief-landing-page.md       Operations  455 lines
-│   ├── 13-phan-tich-du-lieu.md        Operations  416 lines
-│   ├── 14-email-marketing.md          Operations  479 lines
-│   └── 15-social-listening.md         Content     426 lines
+├── .claude-plugin/
+│   └── marketplace.json            # Claude Code plugin spec
 │
-├── references/                 # Tai lieu tham khao
-│   ├── benchmarks-vietnam.md          Benchmark thi truong VN
-│   ├── channel-system.md              He thong kenh Over Powers Agency
-│   ├── content-angles.md              Goc do noi dung theo pheu
-│   ├── kpi-formulas.md                Cong thuc tinh KPI
-│   └── tool-stack.md                  Cong cu khuyen dung
+├── .github/
+│   ├── ISSUE_TEMPLATE/              # Bug report + skill request
+│   └── PULL_REQUEST_TEMPLATE/       # New skill + skill update
 │
-├── workflows/                  # Luong lam viec tu dong
-│   ├── campaign-launch.md             Chay chien dich A-Z
-│   ├── monthly-cycle.md               Chu ky lap lai hang thang
-│   └── content-production.md          San xuat noi dung hang tuan
+├── skills/                          # 20 skills (folder per skill)
+│   ├── product-marketing-context/   # Foundation skill (★)
+│   │   └── SKILL.md
+│   ├── 00-ke-hoach-mkt/
+│   │   └── SKILL.md
+│   ├── 01-lich-noi-dung/
+│   │   └── SKILL.md
+│   └── ... (18 more)
 │
-├── agents/                     # Agent chuyen biet
-│   ├── mkt-strategist.md              Chien luoc gia
-│   ├── content-producer.md            San xuat noi dung
-│   ├── performance-analyst.md         Phan tich hieu suat
-│   └── channel-operator.md            Van hanh kenh
+├── references/                      # Shared references
+│   ├── benchmarks-vietnam.md
+│   ├── channel-system.md
+│   ├── content-angles.md
+│   ├── kpi-formulas.md
+│   └── tool-stack.md
 │
-├── examples/                   # Vi du output mau
-│   ├── spa-beauty.md                  Spa & Beauty industry
-│   └── ecommerce-fashion.md           E-commerce thoi trang
+├── workflows/                       # Multi-skill workflows
+├── agents/                          # Agent personas
+├── examples/                        # Sample outputs
 │
-├── CLAUDE.md                   # Config cho Claude Code
-├── install.sh                  # Installer macOS/Linux
-├── install.ps1                 # Installer Windows
-└── LICENSE                     # MIT
+├── AGENTS.md                        # Universal agent spec
+├── CLAUDE.md                        # Claude-specific config
+├── CONTRIBUTING.md                  # How to contribute
+├── VERSIONS.md                      # Version tracking
+├── validate-skills.sh               # Bash validator
+├── validate-skills.ps1              # PowerShell validator
+├── install.sh                       # macOS/Linux installer
+├── install.ps1                      # Windows installer
+└── LICENSE                          # MIT
 ```
 
 ---
 
 ## Contributing
 
+Doc [`CONTRIBUTING.md`](CONTRIBUTING.md) truoc khi bat dau.
+
 ```bash
 # 1. Fork repo
-
 # 2. Tao branch
 git checkout -b feature/ten-skill-moi
 
-# 3. Viet skill theo format (xem CLAUDE.md)
-#    - Frontmatter: name, description, category, triggers, output, related
-#    - "Thu thap thong tin" section (max 4 cau hoi)
-#    - Output template co cau truc (markdown tables)
-#    - Cross-references den skill lien quan
-#    - Quality checklist
+# 3. Chay validator truoc khi commit
+./validate-skills.sh
 
-# 4. Tao PR
+# 4. Conventional Commits
+git commit -m "feat(skill): add ten-skill-moi"
+
+# 5. Tao PR voi template
 ```
+
+---
+
+## Thanks & Credits
+
+- **Inspired by:** [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) — foundation skill concept + plugin spec
+- **Spec:** [Agent Skills Spec](https://agentskills.io)
+- **Framework:** Over Powers Agency — thi truong VN 2025-2026
 
 ---
 

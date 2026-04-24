@@ -1,5 +1,5 @@
 ---
-name: thiet-lap-kenh
+name: 11-thiet-lap-kenh
 description: Huong dan thiet lap kenh marketing A-Z — TikTok Brand, Zalo OA, Facebook Page, Email (Brevo), TikTok Shop, Instagram Business, Google Business Profile — tu tao den chay 30 ngay dau
 category: operations
 triggers:

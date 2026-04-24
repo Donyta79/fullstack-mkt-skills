@@ -1,5 +1,5 @@
 ---
-name: script-video
+name: 04-script-video
 description: Viet script video ngan cho TikTok, Reels, YouTube Shorts — 2 ban A/B, co hook, CTA, huong dan quay chi tiet
 category: content
 triggers:

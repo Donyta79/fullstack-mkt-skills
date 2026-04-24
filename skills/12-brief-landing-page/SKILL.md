@@ -1,5 +1,5 @@
 ---
-name: brief-landing-page
+name: 12-brief-landing-page
 description: Tao brief landing page chuyen doi cao — 7 section, 1 page = 1 goal = 1 CTA, mobile-first, toi uu conversion
 category: content
 triggers:
