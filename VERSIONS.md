@@ -6,29 +6,86 @@
 
 | Skill | Version | Last Updated | Category |
 |-------|---------|--------------|----------|
-| product-marketing-context | 1.0.0 | 2026-04-24 | foundation |
+| product-marketing-context | 1.1.0 | 2026-05-02 | foundation |
 | 00-ke-hoach-mkt | 2.0.0 | 2026-04-24 | strategy |
-| 01-lich-noi-dung | 2.0.0 | 2026-04-24 | content |
+| 01-lich-noi-dung | 2.1.0 | 2026-05-02 | content |
 | 02-brief-chien-dich | 2.0.0 | 2026-04-24 | strategy |
-| 03-danh-gia-hieu-suat | 2.0.0 | 2026-04-24 | performance |
-| 04-script-video | 2.0.0 | 2026-04-24 | content |
-| 05-copy-quang-cao | 2.0.0 | 2026-04-24 | content |
+| 03-danh-gia-hieu-suat | 2.2.0 | 2026-05-03 | performance |
+| 04-script-video | 2.1.0 | 2026-05-02 | content |
+| 05-copy-quang-cao | 2.2.0 | 2026-05-02 | content |
 | 06-brief-ugc-egc | 2.0.0 | 2026-04-24 | content |
 | 07-bao-cao-marketing | 2.0.0 | 2026-04-24 | performance |
-| 08-nghien-cuu-doi-thu | 2.0.0 | 2026-04-24 | strategy |
+| 08-nghien-cuu-doi-thu | 2.2.0 | 2026-05-03 | strategy |
 | 09-insight-khach-hang | 2.0.0 | 2026-04-24 | strategy |
 | 10-tinh-kpi-nguoc | 2.0.0 | 2026-04-24 | performance |
 | 11-thiet-lap-kenh | 2.0.0 | 2026-04-24 | operations |
 | 12-brief-landing-page | 2.0.0 | 2026-04-24 | operations |
 | 13-phan-tich-du-lieu | 2.0.0 | 2026-04-24 | operations |
 | 14-email-marketing | 2.0.0 | 2026-04-24 | operations |
-| 15-social-listening | 2.0.0 | 2026-04-24 | content |
+| 15-social-listening | 2.1.0 | 2026-05-02 | content |
 | 16-marketing-psychology | 1.0.0 | 2026-04-24 | strategy |
 | 17-pricing-strategy | 1.0.0 | 2026-04-24 | strategy |
 | 18-referral-program | 1.0.0 | 2026-04-24 | operations |
 | 19-ab-test-setup | 1.0.0 | 2026-04-24 | performance |
+| 20-brief-client-intake | 1.0.0 | 2026-04-24 | operations |
+| 21-audit-ads-performance | 1.2.0 | 2026-05-03 | performance |
 
 ## Changelog
+
+### 2026-05-03 — v2.3.0
+
+**Meta Official MCP Integration (mcp.facebook.com/ads — 29 tools)**
+
+**Upgrades:**
+- `21-audit-ads-performance` 1.1.0 → 1.2.0: Full 29-tool Meta Official MCP audit workflow (anomaly signal, industry benchmark, opportunity score, dataset quality)
+- `03-danh-gia-hieu-suat` 2.1.0 → 2.2.0: Meta Official MCP diagnostic + benchmark tools (performance trend, anomaly signal, industry benchmark, opportunity score)
+- `08-nghien-cuu-doi-thu` 2.1.0 → 2.2.0: Dual-source research (Ads Library + Meta Official MCP industry benchmarks + auction ranking)
+
+**Reference update:**
+- `references/mcp-ads-integration.md` — Major update: confirmed endpoint `mcp.facebook.com/ads`, full 29 tools list (5 groups), 3 permission tiers, setup qua claude.ai, write operation warnings, Pipeboard CLI, AdKit
+
+### 2026-05-02 — v2.2.0
+
+**Inspired by:** [charlie947/social-media-skills](https://github.com/charlie947/social-media-skills) (Charlie Hills, 350K+ followers, 100M+ views/year)
+
+**Upgrades:**
+- `04-script-video` 2.0.0 → 2.1.0: Added 6 hook formulas + reverse-engineer viral video + QA Score gate (85/100)
+- `05-copy-quang-cao` 2.1.0 → 2.2.0: Added 6 hook types for ads + Copy Scoring system (35/50 gate)
+- `01-lich-noi-dung` 2.0.0 → 2.1.0: Added Content Matrix (8 formats × pillars = auto-generated ideas)
+- `15-social-listening` 2.0.0 → 2.1.0: Added Niche Research — 20 trending topics in 7 days from VN channels
+- `product-marketing-context` 1.0.0 → 1.1.0: Enhanced Brand Voice section with voice signals + absence signals analysis
+
+**New reference:**
+- `references/hook-formulas-vn.md` — 6 hook types, funnel mapping, platform char limits, anti-patterns
+
+### 2026-05-01 — v2.1.0
+
+**Upgrades:**
+- `03-danh-gia-hieu-suat` 2.0.0 → 2.1.0: Added Health Score (0-100) + 10 Quality Gates + MCP auto-pull
+- `05-copy-quang-cao` 2.0.0 → 2.1.0: Added 6 copy frameworks (AIDA/PAS/BAB/4P/FAB/SSS) + Andromeda warning
+- `08-nghien-cuu-doi-thu` 2.0.0 → 2.1.0: Added Facebook Ads Library MCP integration
+- `21-audit-ads-performance` 1.0.0 → 1.1.0: Added MCP auto-pull section
+
+**New references:**
+- `references/mcp-ads-integration.md` — 8 MCP servers across Meta/Google/TikTok
+- `references/copy-frameworks-vn.md` — 6 copy frameworks for VN market
+- `references/quality-gates-vn.md` — 10 hard rules for ads quality
+
+**New docs:**
+- `docs/skill-map.md` — System visualization + decision tree
+- `docs/mcp-setup-guide.md` — Step-by-step MCP setup
+- `docs/workflow-guide.md` — Unified workflow guide
+- `docs/update-guide.md` — Maintenance guide
+- `docs/faq.md` — FAQ + troubleshooting
+
+**New workflow:**
+- `workflows/client-onboard.md` — Agency client onboarding (5-7 days, 7 skills)
+
+**Workflow updates:**
+- All 4 workflow files now include UML sequence diagrams
+
+**CLAUDE.md:**
+- Added MCP Ads Integration section with platform-to-skill mapping
 
 ### 2026-04-24 — v2.0.0 (Major release)
 

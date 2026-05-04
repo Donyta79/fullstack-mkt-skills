@@ -4,10 +4,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/v2.0-Plugin%20Ready-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v2.0"/>
-  <img src="https://img.shields.io/badge/Skills-20-6d28d9?style=for-the-badge&labelColor=1e1033" alt="20 Skills"/>
+  <img src="https://img.shields.io/badge/v2.3-Plugin%20Ready-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v2.3"/>
+  <img src="https://img.shields.io/badge/Skills-22-6d28d9?style=for-the-badge&labelColor=1e1033" alt="22 Skills"/>
   <img src="https://img.shields.io/badge/Agents-4-be185d?style=for-the-badge&labelColor=1e1033" alt="4 Agents"/>
-  <img src="https://img.shields.io/badge/Workflows-3-0f766e?style=for-the-badge&labelColor=1e1033" alt="3 Workflows"/>
+  <img src="https://img.shields.io/badge/Workflows-4-0f766e?style=for-the-badge&labelColor=1e1033" alt="4 Workflows"/>
   <img src="https://img.shields.io/badge/Market-Vietnam%202025--2026-f97316?style=for-the-badge&labelColor=1e1033" alt="Vietnam Market"/>
   <img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&labelColor=1e1033" alt="MIT License"/>
 </p>
@@ -23,10 +23,12 @@
 
 <p align="center">
   <a href="docs/getting-started.md"><b>Getting Started</b></a> &middot;
-  <a href="docs/best-practices.md"><b>Best Practices</b></a> &middot;
+  <a href="docs/skill-map.md"><b>Skill Map</b></a> &middot;
+  <a href="docs/workflow-guide.md"><b>Workflows</b></a> &middot;
+  <a href="docs/mcp-setup-guide.md"><b>MCP Setup</b></a> &middot;
+  <a href="docs/faq.md"><b>FAQ</b></a> &middot;
   <a href="CONTRIBUTING.md"><b>Contributing</b></a> &middot;
-  <a href="CHANGELOG.md"><b>Changelog</b></a> &middot;
-  <a href="VERSIONS.md"><b>Versions</b></a>
+  <a href="CHANGELOG.md"><b>Changelog</b></a>
 </p>
 
 <h1 align="center">Fullstack Marketing Skills</h1>
@@ -162,7 +164,7 @@ Copy `.md` files as Custom Instructions or context. Each file is a standalone pr
 
 ---
 
-## 20 Skills
+## 22 Skills
 
 <table>
 <tr><th>#</th><th>Skill</th><th>What it does</th><th>Category</th></tr>
@@ -266,7 +268,17 @@ Copy `.md` files as Custom Instructions or context. Each file is a standalone pr
 ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
 
 </td></tr>
-<tr><td><code>19</code></td><td><a href="skills/19-ab-test-setup/SKILL.md"><b>A/B Test Setup</b></a> <sup>NEW</sup></td><td>Sample size + 8 what-to-test + significance analysis</td><td>
+<tr><td><code>19</code></td><td><a href="skills/19-ab-test-setup/SKILL.md"><b>A/B Test Setup</b></a></td><td>Sample size + 8 what-to-test + significance analysis</td><td>
+
+![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
+
+</td></tr>
+<tr><td><code>20</code></td><td><a href="skills/20-brief-client-intake/SKILL.md"><b>Client Intake Brief</b></a> <sup>NEW</sup></td><td>20-industry intake form + 11-section brief for agencies</td><td>
+
+![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
+
+</td></tr>
+<tr><td><code>21</code></td><td><a href="skills/21-audit-ads-performance/SKILL.md"><b>Ads Health Audit</b></a> <sup>NEW</sup></td><td>84 checkpoints + Health Score (0-100) + Quality Gates</td><td>
 
 ![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
 
@@ -296,7 +308,12 @@ Copy `.md` files as Custom Instructions or context. Each file is a standalone pr
 
 ---
 
-## 3 Workflows
+## 4 Workflows
+
+### Client Onboard — Agency (5-7 days) <sup>NEW</sup>
+```
+20 Brief Intake → 09 Insights → 08 Competitors → 10 KPIs → 00 Plan → 02 Brief → 01 Calendar
+```
 
 ### Campaign Launch (14-21 days)
 ```
@@ -357,21 +374,39 @@ fullstack-mkt-skills/
 │   ├── ISSUE_TEMPLATE/              # Bug report + skill request
 │   └── PULL_REQUEST_TEMPLATE/       # New skill + skill update
 │
-├── skills/                          # 20 skills (folder per skill)
+├── skills/                          # 22 skills (folder per skill)
 │   ├── product-marketing-context/   # Foundation skill (★)
 │   │   └── SKILL.md
 │   ├── 00-ke-hoach-mkt/
 │   │   └── SKILL.md
-│   └── ... (18 more)
+│   └── ... (20 more, up to 21-audit-ads-performance)
 │
 ├── references/                      # Shared references
 │   ├── benchmarks-vietnam.md
 │   ├── channel-system.md
 │   ├── content-angles.md
+│   ├── copy-frameworks-vn.md       # 6 copy frameworks (NEW)
 │   ├── kpi-formulas.md
+│   ├── mcp-ads-integration.md      # MCP server guide (NEW)
+│   ├── quality-gates-vn.md         # 10 hard rules (NEW)
+│   ├── hook-formulas-vn.md         # 6 hook types for VN (NEW)
 │   └── tool-stack.md
 │
-├── workflows/                       # Multi-skill workflows
+├── workflows/                       # 4 multi-skill workflows
+│   ├── campaign-launch.md
+│   ├── client-onboard.md           # Agency workflow (NEW)
+│   ├── content-production.md
+│   └── monthly-cycle.md
+│
+├── docs/                            # Documentation
+│   ├── best-practices.md
+│   ├── faq.md                      # FAQ + troubleshooting (NEW)
+│   ├── getting-started.md
+│   ├── mcp-setup-guide.md          # MCP setup guide (NEW)
+│   ├── skill-map.md                # System visualization (NEW)
+│   ├── update-guide.md             # Maintenance guide (NEW)
+│   └── workflow-guide.md           # Workflow selection (NEW)
+│
 ├── agents/                          # Agent personas
 ├── examples/                        # Sample outputs
 │
